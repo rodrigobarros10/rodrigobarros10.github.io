@@ -3,109 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio | Rodrigo Barros</title>
+    <title>Rodrigo Barros | Portfólio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Fonte do Google -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Cabeçalho -->
-    <header>
-        <div class="container header-container">
-            <h1>Rodrigo Barros</h1>
-            <nav>
-                <a href="#sobre">Sobre Mim</a>
-                <a href="#habilidades">Habilidades</a>
-                <a href="#projetos">Projetos</a>
-                <a href="#contato">Contato</a>
-            </nav>
+    <!-- Navegação -->
+    <nav>
+        <div class="nav-container">
+            <span class="logo">rodrigo.barros</span>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
         </div>
-    </header>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="container">
+        <div class="hero-image-placeholder">
+            <!-- Você pode colocar sua foto depois no CSS -->
+        </div>
+        <div class="hero-content">
+            <div class="hero-tag">Portfólio · Engenharia de Dados & Backend</div>
+            <h1>Arquitetura Escalável,<br><span>Performance & Dados.</span></h1>
+            <p>Olá! Sou Rodrigo, <strong>especialista em construir sistemas robustos e pipelines de dados</strong>. Unindo Backend e Ciência de Dados, desenvolvo soluções utilizando Python, Java, C#, bancos de dados e serviços em nuvem (AWS e GCP) para transformar dados complexos em soluções de alta disponibilidade.</p>
+            <div class="hero-links">
+                <a href="https://github.com/rodrigobarros10" target="_blank" class="btn">GitHub &rarr;</a>
+                <a href="https://www.linkedin.com/in/rodrigo-barros-788a61114/" target="_blank" class="btn">Linkedin &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider container"></div>
 
     <!-- Seção Sobre -->
     <section id="sobre" class="container">
-        <h2>Olá, eu sou o Rodrigo! 👋</h2>
-        <p>Desenvolvedor apaixonado por tecnologia, focado em criar soluções eficientes e de alta qualidade. Aqui você encontrará um pouco do meu trabalho, estudos e evolução na área de programação e dados.</p>
-    </section>
-
-    <!-- Seção Habilidades -->
-    <section id="habilidades" class="container">
-        <h2>Minhas Habilidades 💻</h2>
-        <div class="habilidades-grid">
+        <div class="section-header">
+            <span>// 01</span>
+            <h2>Sobre mim</h2>
+        </div>
+        
+        <div class="sobre-grid">
+            <div class="competencias">
+                <h3>Principais competências</h3>
+                <ul>
+                    <li>Desenvolvimento de APIs e integrações backend escaláveis.</li>
+                    <li>Criação, otimização e manutenção de pipelines de dados (ETL).</li>
+                    <li>Modelagem e estruturação de Bancos de Dados Relacionais complexos.</li>
+                    <li>Implantação de infraestrutura e processamento em nuvem (AWS / GCP).</li>
+                    <li>Análise e processamento de grandes volumes de dados.</li>
+                </ul>
+            </div>
             
-            <!-- Linguagens e Bibliotecas -->
-            <div class="habilidade-categoria">
-                <h3>Linguagens & Bibliotecas</h3>
-                <div class="tags">
+            <div class="sobre-texto">
+                <p>Profissional focado em <strong>desenvolvimento e engenharia de dados</strong>, com forte capacidade de resolver problemas complexos através de código limpo e arquiteturas eficientes.</p>
+                <p>Tenho experiência em integrar o mundo do desenvolvimento de software tradicional (Java, C#) com o ecossistema moderno de dados (Python, Pandas, PySpark), garantindo que a informação seja não apenas armazenada, mas processada de forma rápida e segura para agregar valor real aos negócios.</p>
+                
+                <div class="stack-title">Stack & ferramentas</div>
+                <div class="stack-tags">
                     <span>Python</span>
                     <span>Pandas</span>
                     <span>PySpark</span>
                     <span>NumPy</span>
-                    <span>Matplotlib</span>
-                    <span>Streamlit</span>
                     <span>PyTorch</span>
                     <span>Java</span>
                     <span>C#</span>
-                </div>
-            </div>
-
-            <!-- Bancos de Dados -->
-            <div class="habilidade-categoria">
-                <h3>Bancos de Dados</h3>
-                <div class="tags">
                     <span>MySQL</span>
                     <span>PostgreSQL</span>
                     <span>SQL Server</span>
-                    <span>Firebird</span>
-                </div>
-            </div>
-
-            <!-- Cloud computing -->
-            <div class="habilidade-categoria">
-                <h3>Cloud</h3>
-                <div class="tags">
                     <span>AWS</span>
                     <span>GCP</span>
+                    <span>Streamlit</span>
+                    <span>Git</span>
                 </div>
             </div>
-
         </div>
     </section>
+
+    <div class="divider container"></div>
 
     <!-- Seção Projetos -->
     <section id="projetos" class="container">
-        <h2>Meus Projetos</h2>
+        <div class="section-header">
+            <span>// 02</span>
+            <h2>Projetos</h2>
+        </div>
+        
         <div class="projetos-grid">
             <!-- Projeto 1 -->
-            <div class="card">
-                <h3>Análise de Dados com Pandas</h3>
-                <p>Breve descrição sobre o que este projeto faz, os insights gerados e como os dados foram tratados.</p>
-                <a href="https://github.com/rodrigobarros10" target="_blank" class="btn">Ver no GitHub</a>
-            </div>
-            
+            <a href="https://github.com/rodrigobarros10" target="_blank" class="projeto-card">
+                <div class="projeto-seta">➦</div>
+                <div class="projeto-top-tags">
+                    <span>Engenharia de Dados</span>
+                    <span>Cloud</span>
+                </div>
+                <h3>Pipeline de Dados Distribuído</h3>
+                <h4>Processamento de dados em nuvem.</h4>
+                <p>Desenvolvimento de um pipeline completo utilizando PySpark para ingestão, transformação e carga de grandes volumes de dados, reduzindo o tempo de processamento das informações.</p>
+                <div class="projeto-bottom-tags">
+                    <span>Python</span>
+                    <span>PySpark</span>
+                    <span>AWS</span>
+                </div>
+            </a>
+
             <!-- Projeto 2 -->
-            <div class="card">
-                <h3>Pipeline na AWS</h3>
-                <p>Breve descrição sobre a arquitetura do projeto e como os serviços em nuvem foram integrados.</p>
-                <a href="https://github.com/rodrigobarros10" target="_blank" class="btn">Ver no GitHub</a>
+            <a href="https://github.com/rodrigobarros10" target="_blank" class="projeto-card">
+                <div class="projeto-seta">➦</div>
+                <div class="projeto-top-tags">
+                    <span>Backend</span>
+                    <span>API</span>
+                </div>
+                <h3>Sistema de Gestão Integrada</h3>
+                <h4>Arquitetura orientada a serviços.</h4>
+                <p>Construção de APIs robustas para comunicação entre diferentes sistemas corporativos, garantindo a integridade dos dados e alta disponibilidade utilizando bancos de dados relacionais.</p>
+                <div class="projeto-bottom-tags">
+                    <span>Java</span>
+                    <span>PostgreSQL</span>
+                    <span>GCP</span>
+                </div>
+            </a>
+
+            <!-- Projeto 3 -->
+            <a href="https://github.com/rodrigobarros10" target="_blank" class="projeto-card">
+                <div class="projeto-seta">➦</div>
+                <div class="projeto-top-tags">
+                    <span>Data Science</span>
+                    <span>Análise</span>
+                </div>
+                <h3>Dashboard de Análise Preditiva</h3>
+                <h4>Transformando dados brutos em inteligência.</h4>
+                <p>Aplicação de modelos de aprendizado de máquina para previsão de resultados e criação de uma interface interativa para visualização dos dados e tomada de decisão.</p>
+                <div class="projeto-bottom-tags">
+                    <span>Python</span>
+                    <span>Streamlit</span>
+                    <span>Pandas</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <div class="divider container"></div>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="container">
+        <div class="section-header">
+            <span>// 03</span>
+            <h2>Contato</h2>
+        </div>
+        
+        <div class="contato-grid">
+            <div class="contato-links">
+                <a href="https://www.linkedin.com/in/rodrigo-barros-788a61114/" target="_blank" class="contato-item">
+                    <span class="contato-tipo">LinkedIn</span>
+                    <span class="contato-valor">linkedin.com/in/rodrigo-barros</span>
+                </a>
+                <a href="https://github.com/rodrigobarros10" target="_blank" class="contato-item">
+                    <span class="contato-tipo">GitHub</span>
+                    <span class="contato-valor">github.com/rodrigobarros10</span>
+                </a>
+            </div>
+            <div class="contato-mensagem">
+                <h3>Vamos construir algo incrível juntos.</h3>
+                <p>Estou aberto a novas oportunidades e desafios técnicos.</p>
             </div>
         </div>
     </section>
 
-    <!-- Seção Contato -->
-    <section id="contato" class="container text-center">
-        <h2>Vamos Conversar?</h2>
-        <p>Sinta-se à vontade para entrar em contato comigo através das minhas redes:</p>
-        <div class="links-contato">
-            <a href="https://www.linkedin.com/in/rodrigo-barros-788a61114/" target="_blank" class="btn btn-outline">LinkedIn</a>
-            <a href="https://github.com/rodrigobarros10" target="_blank" class="btn btn-outline">GitHub</a>
-        </div>
-    </section>
+    <div class="divider container"></div>
 
     <!-- Rodapé -->
     <footer>
-        <p>&copy; 2026 Rodrigo Barros. Desenvolvido com dedicação.</p>
+        <div class="footer-content container">
+            <span>&copy; 2026 <strong>Rodrigo Barros</strong> — Data Engineering & Backend</span>
+            <span>built with <strong>código + café ☕︎</strong></span>
+        </div>
     </footer>
 
 </body>
